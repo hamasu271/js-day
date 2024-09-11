@@ -46,9 +46,9 @@ const fruits = ["Apple", "Banana", "Orange"];
 console.log(fruits[1]);  
 
 // 9. 배열에 요소 추가하기 (push)
-const numbers = [1, 2, 3, 4];
-numbers.push(5);
-console.log(numbers);  
+const numbers2 = [1, 2, 3, 4];
+numbers2.push(5);
+console.log(numbers2);  
 
 // 10. 배열에서 요소 제거하기 (pop)
 const colors = ["Red", "Green", "Blue"];
@@ -66,16 +66,20 @@ names.unshift("Alice");
 console.log(names);  
 
 // 13. 배열 순회하며 값 출력하기 (forEach)
-numbers.forEach(num => console.log(num));  
+const numbers3 = [1, 2, 3];
+
+numbers3.forEach(num => console.log(num));  
 
 // 14. 배열을 두 배로 변환하기 (map)
-const doubledNumbers = numbers.map(num => num * 2);
+const doublednumbers = [1, 2, 3, 4];
+
+const doubledNumbers = doublednumbers.map(num => num * 2);
 console.log(doubledNumbers);  
 
 // 15. 배열 필터링하기 (filter)
 const ages = [12, 18, 20, 14, 25];
-const adultsAges = ages.filter(age => age >= 18);
-console.log(adultsAges);  
+const 성인 = ages.filter(age => age >= 18);
+console.log(성인);  
 
 // 16. 배열 합계 구하기 (reduce)
 const prices = [10, 20, 30, 40];
@@ -83,8 +87,8 @@ const total = prices.reduce((sum, price) => sum + price, 0);
 console.log(total);  
 
 // 17. 배열에 특정 값이 있는지 확인하기 (includes)
-const fruitsCheck = ["Apple", "Orange", "Grapes"];
-console.log(fruitsCheck.includes("Banana"));  
+const fruits = ["Apple", "Orange", "Grapes"];
+console.log(fruits.includes("Banana"));  
 
 // 18. 배열 정렬하기 (sort)
 const unsortedNumbers = [5, 2, 8, 1, 3];
@@ -98,13 +102,13 @@ console.log(letters);
 
 // 20. 배열 일부 잘라내기 (slice)
 const animals = ["Cat", "Dog", "Elephant", "Lion"];
-const slicedAnimals = animals.slice(0, 2);
-console.log(slicedAnimals);  
+const newAnimals = animals.slice(0, 2);
+console.log(newAnimals);  
 
 // 21. 배열 요소 추가 및 제거하기 (splice)
-const fruitsSplice = ["Apple", "Banana", "Orange"];
-fruitsSplice.splice(1, 0, "Strawberry");
-console.log(fruitsSplice);  
+const fruits2 = ["Apple", "Banana", "Orange"];
+fruits2.splice(1, 0, "Strawberry");
+console.log(fruits2);  
 
 // 22. 배열 두 개 합치기 (concat)
 const arr1 = [1, 2, 3];
@@ -122,31 +126,31 @@ const expensiveProduct = products.find(product => product.price >= 100);
 console.log(expensiveProduct);  
 
 // 24. 모든 요소가 조건을 만족하는지 확인하기 (every)
-const allEven = [2, 4, 6, 8].every(num => num % 2 === 0);
-console.log(allEven);  
+const numbers4 = [2, 4, 6, 8].every(num => num % 2 === 0);
+console.log(numbers4);  
 
 // 25. 배열 요소 중 하나라도 조건을 만족하는지 확인하기 (some)
-const agesCheck = [16, 20, 18, 19];
-const hasAdult = agesCheck.some(age => age >= 21);
-console.log(hasAdult);  
+const ages = [16, 20, 18, 19];
+const 나이확인 = ages.some(age => age >= 21);
+console.log(나이확인);  
 
 // 26. 배열에 중복된 값이 있는지 확인하기
-const numsWithDuplicates = [1, 2, 3, 4, 2, 5];
-const hasDuplicates = numsWithDuplicates.some((item, index) => numsWithDuplicates.indexOf(item) !== index);
-console.log(hasDuplicates);  
+const numbers5 = [1, 2, 3, 4, 2, 5];
+const 중복확인 = numbers5.some((item, index) => numbers5.indexOf(item) !== index);
+console.log(중복확인);  
 
 // 27. 객체 배열의 속성 값을 기준으로 정렬하기
-const peopleSort = [
+const people2 = [
   { name: "John", age: 30 },
   { name: "Jane", age: 25 },
   { name: "Mark", age: 35 }
 ];
-peopleSort.sort((a, b) => a.age - b.age);
-console.log(peopleSort);  
+people2.sort((a, b) => a.age - b.age);
+console.log(people2);  
 
 // 28. 조건을 만족하는 요소의 인덱스 찾기 (findIndex)
-const agesFindIndex = [16, 18, 22, 20];
-const index = agesFindIndex.findIndex(age => age >= 21);
+const 나이 = [16, 18, 22, 20];
+const index = 나이.findIndex(age => age >= 21);
 console.log(index);  
 
 // 29. 배열을 문자열로 변환하기 (join)
