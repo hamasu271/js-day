@@ -155,8 +155,8 @@ console.log(index);
 
 // 29. 배열을 문자열로 변환하기 (join)
 const words = ["Hello", "World", "JavaScript"];
-const joinedWords = words.join(", ");
-console.log(joinedWords);  
+const Words2 = words.join(", ");
+console.log(Words2);  
 
 // 30. 중첩된 배열 평탄화하기 (flat)
 const nestedArray = [[1, 2], [3, 4], [5, [6, 7]]];
