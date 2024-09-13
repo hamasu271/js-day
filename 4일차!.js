@@ -48,7 +48,7 @@
     
     
     const numbers1 = [1, 2, 3, 4, 5];
-    const result = numbers.map(num => num * 2);
+    const result = numbers1.map(num => num * 2);
     
 //[2, 4, 6, 8, 10]
     
